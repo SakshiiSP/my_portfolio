@@ -60,6 +60,37 @@ body {
   padding: 0 40px;
 }
 
+nav {
+  background-color: #050547;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 8px 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+
 /* Logo or Name */
 .logo {
   font-size: 20px;
@@ -386,6 +417,18 @@ body {
 
 /* Mobile-friendly layout */
 @media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav {
+    padding: 15px 10px;
+  }
   .projects-section {
     padding: 20px;
     margin: 30px 10px;
@@ -398,6 +441,7 @@ body {
 
   .project-image {
     width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto 15px;
     display: block;
@@ -405,7 +449,7 @@ body {
 
   .btn {
     display: block;
-    width: 100%;
+    width: 80%;
     margin: 8px 0;
     font-size: 16px;
   }
