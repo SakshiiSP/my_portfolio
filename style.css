@@ -383,3 +383,30 @@ body {
 .contact-icons a.contact-item:hover {
   transform: scale(1.05);
 }
+
+/* Mobile-friendly layout */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+
+  .project-card {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 15px;
+    display: block;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+}
